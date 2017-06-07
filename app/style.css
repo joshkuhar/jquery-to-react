@@ -1,0 +1,72 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700,300);
+
+body {
+  background: lightcyan;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+.form-field {
+  text-align: center;
+}
+.form-input {
+  font-size: 1.1em;
+  padding: .25em;
+  border-radius: 5px;
+  border-style: none;
+  border: .01em solid grey;
+}
+.submit-button {
+  font-size: 1.1em;
+  padding: .3em;
+  border-radius: 5px;
+  border-style: none;
+  background-color: blueviolet;
+  color: white;
+}
+.submit-button:hover {
+  cursor: pointer;
+  background-color: cornflowerblue;
+}
+.td-color {
+  border-width: 0.05em;
+  border-style: solid;
+  border-color: lightgrey;
+  border-radius: 5px;
+  padding: 0.3em;  
+}
+.table-data {
+  border: .1em solid aliceblue;
+  border-radius: .5em;
+  padding: .3em;
+}
+.td-click {
+  width: 1em;
+  font-size: .8em;
+  background: red;
+  color: white;
+  padding: .6em;
+  text-align: center;
+}
+.td-click:hover {
+  background: crimson;
+  cursor: pointer;
+}
+.table-container {
+  min-width: 19em;
+  margin: 0 auto;
+}
+.thead-container {
+  text-align: left;
+  font-size: 1.2em;
+  color: darkcyan;
+}
+.tiles {
+  width: 15em;
+  margin: 1em auto;
+}
+.tile {
+  height: 2em;
+  width: 2em;
+  border-radius: 10px;
+  display: inline-block;
+  margin: .2em;
+}
