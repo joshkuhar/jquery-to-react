@@ -1,11 +1,22 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700,300);
+@import url('https://fonts.googleapis.com/css?family=Overpass+Mono:400,600,700');
+
 
 body {
   background: lightcyan;
   font-family: 'Roboto Condensed', sans-serif;
 }
+h2 {
+  text-align: center;
+  color: darkblue;
+  font-size: 2em;
+}
+.intro {
+  text-align: center;
+}
 .form-field {
   text-align: center;
+  margin-top: 1em;
 }
 .form-input {
   font-size: 1.1em;
@@ -26,12 +37,21 @@ body {
   cursor: pointer;
   background-color: cornflowerblue;
 }
+.library-header {
+  text-align: center;
+  margin: 1.5em auto;
+  margin-bottom: 0em;
+  font-size: 1.5em; 
+  color: darkblue;
+}
 .td-color {
   border-width: 0.05em;
   border-style: solid;
   border-color: lightgrey;
   border-radius: 5px;
-  padding: 0.3em;  
+  padding: 0.3em;
+  padding-left: .75em;
+  background-color: white;  
 }
 .table-data {
   border: .1em solid aliceblue;
@@ -52,12 +72,8 @@ body {
 }
 .table-container {
   min-width: 19em;
-  margin: 0 auto;
-}
-.thead-container {
-  text-align: left;
-  font-size: 1.2em;
-  color: darkcyan;
+  margin: 1em auto;
+  margin-bottom: 0em;
 }
 .tiles {
   width: 15em;
@@ -69,4 +85,17 @@ body {
   border-radius: 10px;
   display: inline-block;
   margin: .2em;
+
+  -moz-transition: -moz-transform ease 1s;
+  -webkit-transition: -webkit-transform ease 1s;
+  -o-transition: -o-transform ease 1s;
+  -ms-transition: -ms-transform ease 1s;
+  transition: transform ease 1s;  
+}
+.tile:hover {
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);  
 }

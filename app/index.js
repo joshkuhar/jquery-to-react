@@ -16,7 +16,7 @@ $('#submit').click(function(event){
 
     // Checks length of array
     if(colors.length > 4){
-      alert("You've reached your maximum amount of colors")
+      alert("You've reached your maximum amount of colors. Please delete one.")
       return
     }
 

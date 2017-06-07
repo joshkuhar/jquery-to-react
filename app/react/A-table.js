@@ -36,12 +36,8 @@ class Table extends React.Component {
   render() {
     return(
       <div>
+        <div className='library-header'>React Component</div>
         <table className='table-container'>
-          <thead className='thead-container'>
-            <tr>
-              <th>React Component</th>
-            </tr>
-          </thead>
             <Rows 
               colors={this.state.colors}
               onDelete={this.onDelete}
@@ -55,3 +51,4 @@ class Table extends React.Component {
 
 
 export default Table
+
