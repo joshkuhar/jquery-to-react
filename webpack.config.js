@@ -12,11 +12,11 @@ module.exports = {
       {
         test: /\.(js|jsx)$/,
         exclude: /(node_modules|bower_components)/,
-      use: {
-        loader: 'babel-loader',
-        options: {
-          presets: ['env']
-        }
+        use: {
+          loader: 'babel-loader',
+          options: {
+            presets: ['env']
+          }
       }
       },
       {
@@ -28,6 +28,7 @@ module.exports = {
       }
     ]
   },
+  devtool: "cheap-source-map",
   plugins: [
     new webpack.ProvidePlugin({
       $: 'jquery',

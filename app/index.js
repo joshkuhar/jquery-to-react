@@ -10,32 +10,21 @@ const container = document.getElementById('root')
 $('#submit').click(function(event){
     event.preventDefault();
 
-    // JQuery returns and array of all table data 
+    // JQuery returns an array of all <td/> 
     // elements that have the td-color class
     var colors = $.find('.td-color')
 
-    // This checks the length of the array
-    // returned by JQuery 
+    // Checks length of array
     if(colors.length > 4){
       alert("You've reached your maximum amount of colors")
       return
     }
 
     // Creates a new array
-    // map can also be expressed 
-    // in ES5 as
-    // .map(function(color){
-    //   return color.innerText
-    // })
     var newColors = colors.map( (color) => {
       return color.innerText
     })
     
-    // The next three lines of code 
-    // takes the value from the input
-    // form, pushes it to the
-    // newColors array, and clears the
-    // form
     var color = $('#color').val()
     newColors.push(color)
     $('#color').val('')
