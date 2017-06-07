@@ -8,10 +8,10 @@ class Tiles extends React.Component {
     // Background color for the tile is passed
     // into the style attribute. The rest of 
     // styling for the div is held in the CSS file. 
-    let tiles = this.props.colors.map( (color, index) => {
+    let tiles = this.props.colors.map( ( color, index ) => {
       return <div
           className='tile'
-          style={ {backgroundColor: color} } 
+          style={ { backgroundColor: color } } 
           key={index}
           ></div>
     })

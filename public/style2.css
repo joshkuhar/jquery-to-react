@@ -1,0 +1,23 @@
+.tile:hover {
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);  
+}
+.form-input {
+  font-size: 1.1em;
+  padding: .25em;
+  border-radius: 5px;
+  border-style: none;
+  border: .01em solid grey;
+}
+.td-color {
+  border-width: 0.05em;
+  border-style: solid;
+  border-color: lightgrey;
+  border-radius: 5px;
+  padding: 0.3em;
+  padding-left: .75em;
+  background-color: white;  
+}

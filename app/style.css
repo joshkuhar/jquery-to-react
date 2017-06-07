@@ -18,13 +18,13 @@ h2 {
   text-align: center;
   margin-top: 1em;
 }
-.form-input {
+/*.form-input {
   font-size: 1.1em;
   padding: .25em;
   border-radius: 5px;
   border-style: none;
   border: .01em solid grey;
-}
+}*/
 .submit-button {
   font-size: 1.1em;
   padding: .3em;
@@ -44,7 +44,7 @@ h2 {
   font-size: 1.5em; 
   color: darkblue;
 }
-.td-color {
+/*.td-color {
   border-width: 0.05em;
   border-style: solid;
   border-color: lightgrey;
@@ -52,7 +52,7 @@ h2 {
   padding: 0.3em;
   padding-left: .75em;
   background-color: white;  
-}
+}*/
 .table-data {
   border: .1em solid aliceblue;
   border-radius: .5em;
@@ -92,10 +92,10 @@ h2 {
   -ms-transition: -ms-transform ease 1s;
   transition: transform ease 1s;  
 }
-.tile:hover {
+/*.tile:hover {
     -moz-transform: rotate(360deg);
     -webkit-transform: rotate(360deg);
     -o-transform: rotate(360deg);
     -ms-transform: rotate(360deg);
     transform: rotate(360deg);  
-}
+}*/

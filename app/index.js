@@ -4,6 +4,7 @@ import style from './style.css';
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Table from './react/A-table';
+import { checkColor } from './helpers/color-list';
 
 const container = document.getElementById('root')
 
@@ -16,7 +17,7 @@ $('#submit').click(function(event){
 
     // Checks length of array
     if(colors.length > 4){
-      alert("You've reached your maximum amount of colors. Please delete one.")
+      alert("Only five colors can be displayed at a time. Please delete one.")
       return
     }
 
@@ -26,7 +27,16 @@ $('#submit').click(function(event){
     })
     
     var color = $('#color').val()
-    newColors.push(color)
+
+    // Check if valid CSS keyword
+    var checked = checkColor(color.trim())
+    if (!checked) {
+        alert('Please enter a valid CSS color.')
+        return
+    }
+
+    newColors.push(color) 
+
     $('#color').val('')
     
     // Destroys the React component
